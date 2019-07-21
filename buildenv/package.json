@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "serve": "^11.1.0"
+  },
+  "scripts": {
+    "p": "serve -s . -l 3000"
+  },
+  "license": "UNLICENSED" 
+
+}
