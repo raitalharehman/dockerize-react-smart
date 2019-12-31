@@ -15,3 +15,7 @@ so this is way more fast then other ways
 ### Step 3 start app
 `docker run -it -p 8080:3000 app-name`
 
+
+### to explore image in terminal 
+`docker run -it image_name sh`
+
