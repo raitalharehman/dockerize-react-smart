@@ -19,6 +19,19 @@ add the following content to it.
 `RUN yarn`          
 `CMD ["yarn", "p"]`        
 
+### step 3 crate a folder "buildenv" and add package.json to it
+in this file add the following content to it.     
+
+`{`     
+  `"dependencies": {`      
+    `"serve": "^11.1.0"`      
+  `},`        
+  `"scripts": {`       
+    `"p": "serve -s . -l 3000" `      
+  `},`       
+  `"license": "UNLICENSED" `       
+`}`      
+
 
 ### step 3 create .dockerignore in root of your project
 add following content to it.
