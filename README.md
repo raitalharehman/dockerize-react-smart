@@ -11,20 +11,21 @@ so this is way more fast then other ways
 
 ### step 2 create a "Dockerfile" in root of your project
 add the following content to it.
+         
+`FROM mhart/alpine-node`   
+`WORKDIR /var/www`      
+`COPY /build .`       
+`COPY /buildenv .`          
+`RUN yarn`          
+`CMD ["yarn", "p"]`        
 
-FROM mhart/alpine-node 
-WORKDIR /var/www 
-COPY /build . 
-COPY /buildenv . 
-RUN yarn  
-CMD ["yarn", "p"]
 
 ### step 3 create .dockerignore in root of your project
 add following content to it.
-
-/node_modules
-.git
-.vscode    this line depends on which ide you are using
+         
+`/node_modules`               
+`.git`       
+`.vscode`    this line depends on which ide you are using        
 
 
 ### Step 4 build Docker image
